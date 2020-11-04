@@ -1,10 +1,10 @@
 
 # build
 
-FROM alpine AS builder
+FROM alpine:latest AS builder
 
-ENV FASM_VERSION 1.73.25
-ENV HEAVYTHING_VERSION 1.24
+ARG FASM_VERSION
+ARG HEAVYTHING_VERSION
 
 RUN apk --update --no-cache add binutils curl && \
 	curl -sL "https://flatassembler.net/fasm-$FASM_VERSION.tgz" | tar xz && \
