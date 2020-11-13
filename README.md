@@ -1,4 +1,4 @@
-# docker-rwasa
+# Rwasa
 
 This image is based on the latest [rwasa](https://2ton.com.au/rwasa/) http server.
 
